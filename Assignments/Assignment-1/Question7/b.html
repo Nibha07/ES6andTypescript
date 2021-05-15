@@ -1,0 +1,18 @@
+
+<html>
+     <body>
+        <div id="res"></div>
+        <script>
+            var organization= {
+                name: 'CME',
+                address:{
+                    pincode: 577002
+                }
+            };
+
+            var {address: { pincode}} = organization;
+            document.getElementById("res").innerHTML = "Input Object: "+JSON.stringify(organization);
+            document.getElementById("res").innerHTML+= " <br> <br>Pincode: "+ pincode;
+        </script>
+    </body>
+</html>
